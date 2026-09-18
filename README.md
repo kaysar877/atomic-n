@@ -159,9 +159,10 @@ measured, and disclosed in §7.
 | Model | 21,274,624 params — 6 layers, d=512, vocab 4096, ctx 256 |
 | Cell budget | exactly 2,099,712 params/side (verified, §2.3) |
 | Data | memory-mapped self-learned corpus, **1,430,013 tokens, 693 blocks** (615 tr / 70 val), tokenizer fingerprint `e58e762461f948bd`, corpus fingerprint `5ac147a51cc3d8f2` (JSON shipped alongside this report) |
-| Seeds | `RANDOM_SEED = 1337`, `LOADER_SEED = 4242` (in `source/config.py`); seed families shared between cells |
+| Seeds | `RANDOM_SEED`, `LOADER_SEED` — env-overridable (`SELFLEARN_RANDOM_SEED`, `SELFLEARN_LOADER_SEED`); defaults 1337/4242 in `source/config.py`. RANDOM_SEED drives reproducible per-run model init (see `pytorch_trainer.py`), LOADER_SEED drives an independent deterministic sampler stream |
 | Protocol | 8-LR matrix × both cells = 16 legs; 6000 steps/leg; eval every 2000 |
 | Controls | forced-choice verdict + adversarial reviewer, hash-locked cell config (freeze `aff1a9fcbaf2373a`), one variable at a time, noise-gated decisions |
+| Multi-seed | champion recipe re-run at seeds **4242 and 7777** (independent of arena 1337) — see `experiments/multiseed/` and `source/multiseed_loop.py` |
 
 ### 3.2 Why the protocol is trustworthy
 
@@ -460,18 +461,46 @@ archived locally, each leg tied to the commit hash of the code that produced it:
 Request access for the full archive; the exact commit `82b0baf` reproducibly refers
 to the code used for every reported number.
 
+> **Note:** text logs + metrics for all legs are **shipped in this repo** under
+> `experiments/` (see Appendix D). Only checkpoints (500 MB/leg) remain on-request.
+
 ## APPENDIX C — STATUS AGAINST COMMON RESEARCH CHECKLIST
 
 | item | status |
 |---|---|
-| exact source + commit hash | ✅ `82b0baf` (this file + `source/`) |
+| exact source + commit hash | ✅ `9c150e3`+ (this file + `source/`) |
 | exact dataset fingerprint | ✅ corpus `5ac147a51cc3d8f2`, 1,430,013 tokens |
 | tokenizer construction | ✅ `source/tokenizer.py`, `source/data_engine.py`, fingerprint `e58e762461f948bd` |
-| random seeds | ✅ `1337` / `4242` in `source/config.py` |
+| random seeds | ✅ env-overridable; init-seeded; defaults `1337`/`4242` in `source/config.py` |
 | optimizer/scheduler config | ✅ recipe table (§10), code verbatim |
-| training logs | 📬 on request (Appendix B) |
+| training logs | ✅ `experiments/` (text; checkpoints on-request) |
 | checkpoints | 📬 on request (Appendix B) |
-| ablation experiments | 📬 on request (attribution legs) |
-| multi-seed confirmation | ⏳ open — listed, not yet run |
+| ablation experiments | ✅ `experiments/opt/attrib_wd|attrib_cos|recipe|solution|conf` (VRAM/token costs in §7) |
+| multi-seed confirmation | ✅ seeds `4242`,`7777` — `experiments/multiseed/` (protocol: Appendix E) |
+
+## APPENDIX D — EXPERIMENT ARTIFACTS IN THIS REPO
+
+```
+experiments/
+  arena/       atomic/ vanilla/   matched-pair matrix logs (8 LRs × both cells)
+  bisect/      atomic edge legs
+  opt/         proof/ attrib_wd/ attrib_cos/ recipe/ solution/ conf/
+  v2_rejected/ v2 probe + radial (budget-failed) — excluded from main claims
+  ascent/      leg_*/  long-horizon Decay-floor runs (see §6)
+  multiseed/   seed_*/ multi-seed confirmation runs
+```
+
+Each leg dir contains `run.log` (trainer+eval), `metrics.csv` (throughput/thermal),
+`diag.log` and `summary.txt`. Checkpoints (`best.pt`, `latest.pt`) are local-only.
+
+## APPENDIX E — MULTI-SEED PROTOCOL
+
+`source/multiseed_loop.py` runs the universal recipe
+(atomic v1 + wd 0.1 + cosine + warmup 200 + floor 0.4 @ LR 1.5e-4, 6000 steps) at
+two NEW seeds `4242` and `7777`, independent of the arena's original `1337`.
+Each seed produces a fresh model init (`torch.manual_seed(RANDOM_SEED)` in
+`pytorch_trainer.py`) and an independent data-sampler stream (`LOADER_SEED + 17`).
+Legs run sequentially (respecting thermal guardrails), each in its own
+checkpoint/log dir. Outcome summary lands in `experiments/multiseed/summary.csv`.
 
 *End of package — v2 excluded by design; contact the author for the extension.*

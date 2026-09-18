@@ -49,7 +49,7 @@ VOCAB_SIZE = 4096                    # byte-level BPE vocab cap
 # --------------------------------------------------------------------------- #
 MAX_STEPS = 50000
 CHECKPOINT_INTERVAL = 100            # save checkpoints/latest.pt every 100 steps
-RANDOM_SEED = 1337
+RANDOM_SEED = int(os.environ.get("SELFLEARN_RANDOM_SEED") or 1337)
 
 # Validation / "well-trained" completion criterion ------------------------- #
 VAL_SPLIT = 0.10                     # fraction of blocks held out
@@ -69,7 +69,7 @@ EFFECTIVE_BATCH = MICRO_BATCH * GRAD_ACCUM   # 16 (matches prior batch)
 DATALOADER_WORKERS = 2               # benchmark 2 vs 4 (start=2, conservative)
 PREFETCH_FACTOR = 4
 PIN_MEMORY = True
-LOADER_SEED = 4242                   # base seed for the persistent sampler
+LOADER_SEED = int(os.environ.get("SELFLEARN_LOADER_SEED") or 4242)   # base seed for the persistent sampler
 
 CHECKPOINT_INTERVAL = 250            # latest.pt recovery cadence
 METRICS_INTERVAL = 100               # log throughput/system metrics every N steps
