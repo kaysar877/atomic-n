@@ -444,4 +444,34 @@ SELFLEARN_MIN_LR_FRAC=0.1   # -> 3.0534 @ 6k (LR 1.5e-4), 3.0524 (LR 2.0e-4)
 - Cell freeze: `sweep/v1_freeze.json` (hash `aff1a9fcbaf2373a`)
 - Live reports: `reports/verdict.md`, `reports/COMPLETE_PROJECT_REPORT.md`
 
+## APPENDIX B — LOGS & CHECKPOINTS (available on request)
+
+Full training logs and model checkpoints from every leg described in this report
+are **not committed to this repository** (checkpoints are ~255 MB each). They are
+archived locally, each leg tied to the commit hash of the code that produced it:
+
+| artifact | location (local) | size |
+|---|---|---|
+| per-leg training logs | `sweep_ascent/leg_*/run.log` (and `leg_*.cmd.log`) | ~1 MB total text |
+| best.pt / latest.pt | `leg_*/` per archive | ~255 MB each |
+| metrics CSVs | `leg_*/metrics.csv` | small |
+| corpus + tokenizer fingerprints | `corpus_fingerprint.json`, `tokenizer.json.hash` | small |
+
+Request access for the full archive; the exact commit `82b0baf` reproducibly refers
+to the code used for every reported number.
+
+## APPENDIX C — STATUS AGAINST COMMON RESEARCH CHECKLIST
+
+| item | status |
+|---|---|
+| exact source + commit hash | ✅ `82b0baf` (this file + `source/`) |
+| exact dataset fingerprint | ✅ corpus `5ac147a51cc3d8f2`, 1,430,013 tokens |
+| tokenizer construction | ✅ `source/tokenizer.py`, `source/data_engine.py`, fingerprint `e58e762461f948bd` |
+| random seeds | ✅ `1337` / `4242` in `source/config.py` |
+| optimizer/scheduler config | ✅ recipe table (§10), code verbatim |
+| training logs | 📬 on request (Appendix B) |
+| checkpoints | 📬 on request (Appendix B) |
+| ablation experiments | 📬 on request (attribution legs) |
+| multi-seed confirmation | ⏳ open — listed, not yet run |
+
 *End of package — v2 excluded by design; contact the author for the extension.*
