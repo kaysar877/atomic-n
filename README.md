@@ -158,7 +158,8 @@ measured, and disclosed in §7.
 | Python / torch | 3.12.10 / 2.14.0+cu126 |
 | Model | 21,274,624 params — 6 layers, d=512, vocab 4096, ctx 256 |
 | Cell budget | exactly 2,099,712 params/side (verified, §2.3) |
-| Data | memory-mapped self-learned corpus, ~1.42M tokens, 693 blocks (615 tr / 70 val), fingerprint-guarded |
+| Data | memory-mapped self-learned corpus, **1,430,013 tokens, 693 blocks** (615 tr / 70 val), tokenizer fingerprint `e58e762461f948bd`, corpus fingerprint `5ac147a51cc3d8f2` (JSON shipped alongside this report) |
+| Seeds | `RANDOM_SEED = 1337`, `LOADER_SEED = 4242` (in `source/config.py`); seed families shared between cells |
 | Protocol | 8-LR matrix × both cells = 16 legs; 6000 steps/leg; eval every 2000 |
 | Controls | forced-choice verdict + adversarial reviewer, hash-locked cell config (freeze `aff1a9fcbaf2373a`), one variable at a time, noise-gated decisions |
 
@@ -199,8 +200,11 @@ measured, and disclosed in §7.
 
 ### 4.3 Verdict: ATOMIC ADVANTAGE — OPTIMIZATION STABILITY, NOT APTITUDE
 
-- Atomic's usable-LR ceiling ≈ **2.9e-4** vs vanilla ≈ **2.1e-4** → **~40% wider usable
-  learning-rate band**, reproduced at three LRs (gap ≈ 2.8, noise ≈ 0.003).
+- Atomic's usable-LR ceiling ≈ **2.9e-4** vs vanilla ≈ **2.1e-4** → in this single
+  controlled experiment, the observed stable-LR interval is **~40% wider for atomic**,
+  reproduced across three independent LRs (2.25 / 2.5 / 2.75e-4, gap ≈ 2.8).
+  **This is a single-seed, single-scale result; independent replication is explicitly
+  listed as a prerequisite before claiming this is universal.**
 - **At matched safe LRs the cells are equal** (|Δ| ≤ 0.014). The edge is calibration
   headroom *only* — you may run LRs that kill vanilla.
 - The evidence says the advantage is about **training robustness**, not
@@ -277,9 +281,11 @@ Deep cosine decay (to 0.1× LR) **starves** an already-gentle low-LR run
 
 ### Conclusions (what you can honestly claim)
 
-1. At matched parameter budgets, Atomic-N v1 provides a **~40% wider usable-LR band**
-   (3 reproductions) — an optimization-stability advantage, equal safe-zone quality,
-   ~33% throughput cost. It does not make the model "smarter" at safe settings.
+1. At matched parameter budgets, this controlled experiment observed Atomic-N v1
+   providing a **~40% wider usable-LR band** (single seed, single model scale, three
+   LR reproductions) — an optimization-stability advantage, equal safe-zone quality,
+   ~33% throughput cost. This is an **observed interval in one controlled experiment**,
+   not a universal property; independent replication is listed as open work (see §8).
 2. **The optimization stack is the genuine win:** same frozen cell + cosine + warmup
    + wd 0.1 → **−0.059 (3.0534)**; reproduced as a robust −0.036 (3.0762) at the
    universal floor. Both knobs independently real and near-additive, zero cost.

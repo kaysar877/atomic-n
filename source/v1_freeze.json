@@ -1,0 +1,10 @@
+{
+ "v1_freeze": {
+  "atomic_block.py": "aff1a9fcbaf2373a",
+  "pytorch_trainer.py": "aaa5a71e52fbece9",
+  "config.py": "c039f52c3e8325a0",
+  "data_engine.py": "c831520c449fa791",
+  "tokenizer.py": "7553c68db8a7365b"
+ },
+ "note": "atomic math frozen from here; additive infra only"
+}
