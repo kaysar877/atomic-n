@@ -1,0 +1,317 @@
+2026-09-15 18:57:06,413 | INFO    | main | ================================================================
+2026-09-15 18:57:06,413 | INFO    | main | self-learning pipeline (steps=6000, model=6L/512E, vocab=4096)
+2026-09-15 18:57:06,413 | INFO    | main | ================================================================
+2026-09-15 18:57:06,624 | INFO    | data_engine | buffer has 687 valid block(s); skipping seed
+2026-09-15 18:57:06,624 | INFO    | main | engine: Standard PyTorch AMP (forced)
+2026-09-15 18:57:06,626 | INFO    | data_engine | corpus mmap already present (corpus_f7eb467c1d7b157a.npy)
+2026-09-15 18:57:18,480 | INFO    | main | step 23      engine=pytorch train=7.9076 blocks=687 val_best=inf
+2026-09-15 18:57:28,561 | INFO    | main | step 50      engine=pytorch train=7.1530 blocks=687 val_best=inf
+2026-09-15 18:57:38,891 | INFO    | main | step 78      engine=pytorch train=6.6617 blocks=687 val_best=inf
+2026-09-15 18:57:47,074 | INFO    | pytorch_trainer | M step=100    train=5.9236  31297.4 tok/s  step=0.131s  cpu=1.7% gpu=17.0% vram=1283.0MB temp=73.0C pw=48.43W
+2026-09-15 18:57:48,934 | INFO    | main | step 105     engine=pytorch train=6.3748 blocks=687 val_best=inf
+2026-09-15 18:57:59,292 | INFO    | main | step 133     engine=pytorch train=6.0915 blocks=687 val_best=inf
+2026-09-15 18:58:09,610 | INFO    | main | step 161     engine=pytorch train=5.7286 blocks=687 val_best=inf
+2026-09-15 18:58:19,966 | INFO    | main | step 189     engine=pytorch train=5.3857 blocks=687 val_best=inf
+2026-09-15 18:58:24,074 | INFO    | pytorch_trainer | M step=200    train=4.7171  33661.5 tok/s  step=0.122s  cpu=4.6% gpu=95.0% vram=1279.0MB temp=73.0C pw=48.59W
+2026-09-15 18:58:30,408 | INFO    | main | step 217     engine=pytorch train=5.1212 blocks=687 val_best=inf
+2026-09-15 18:58:40,560 | INFO    | main | step 244     engine=pytorch train=4.9273 blocks=687 val_best=inf
+2026-09-15 18:58:50,666 | INFO    | main | step 270     engine=pytorch train=4.7758 blocks=687 val_best=inf
+2026-09-15 18:59:00,907 | INFO    | main | step 297     engine=pytorch train=4.6534 blocks=687 val_best=inf
+2026-09-15 18:59:02,040 | INFO    | pytorch_trainer | M step=300    train=4.4654  34528.2 tok/s  step=0.119s  cpu=2.2% gpu=97.0% vram=1279.0MB temp=74.0C pw=49.86W
+2026-09-15 18:59:11,114 | INFO    | main | step 324     engine=pytorch train=4.5478 blocks=687 val_best=inf
+2026-09-15 18:59:21,432 | INFO    | main | step 351     engine=pytorch train=4.4677 blocks=687 val_best=inf
+2026-09-15 18:59:31,674 | INFO    | main | step 378     engine=pytorch train=4.4218 blocks=687 val_best=inf
+2026-09-15 18:59:39,822 | INFO    | pytorch_trainer | M step=400    train=4.2664  34963.3 tok/s  step=0.117s  cpu=1.4% gpu=0.0% vram=1279.0MB temp=72.0C pw=49.87W
+2026-09-15 18:59:41,680 | INFO    | main | step 405     engine=pytorch train=4.3625 blocks=687 val_best=inf
+2026-09-15 18:59:52,038 | INFO    | main | step 433     engine=pytorch train=4.3073 blocks=687 val_best=inf
+2026-09-15 19:00:02,129 | INFO    | main | step 459     engine=pytorch train=4.2729 blocks=687 val_best=inf
+2026-09-15 19:00:12,480 | INFO    | main | step 487     engine=pytorch train=4.2295 blocks=687 val_best=inf
+2026-09-15 19:00:17,823 | INFO    | pytorch_trainer | M step=500    train=4.1527  35234.6 tok/s  step=0.116s  cpu=5.7% gpu=18.0% vram=1279.0MB temp=71.0C pw=45.83W
+2026-09-15 19:00:22,658 | INFO    | main | step 513     engine=pytorch train=4.2038 blocks=687 val_best=inf
+2026-09-15 19:00:32,698 | INFO    | main | step 539     engine=pytorch train=4.1770 blocks=687 val_best=inf
+2026-09-15 19:00:42,884 | INFO    | main | step 565     engine=pytorch train=4.1553 blocks=687 val_best=inf
+2026-09-15 19:00:53,023 | INFO    | main | step 591     engine=pytorch train=4.1281 blocks=687 val_best=inf
+2026-09-15 19:00:56,372 | INFO    | pytorch_trainer | M step=600    train=3.9034  36374.0 tok/s  step=0.113s  cpu=2.2% gpu=0.0% vram=1279.0MB temp=72.0C pw=49.8W
+2026-09-15 19:01:03,212 | INFO    | main | step 618     engine=pytorch train=4.1119 blocks=687 val_best=inf
+2026-09-15 19:01:13,370 | INFO    | main | step 645     engine=pytorch train=4.1030 blocks=687 val_best=inf
+2026-09-15 19:01:23,657 | INFO    | main | step 671     engine=pytorch train=4.0883 blocks=687 val_best=inf
+2026-09-15 19:01:34,005 | INFO    | main | step 697     engine=pytorch train=4.0630 blocks=687 val_best=inf
+2026-09-15 19:01:35,323 | INFO    | pytorch_trainer | M step=700    train=3.9087  36358.3 tok/s  step=0.113s  cpu=1.9% gpu=0.0% vram=1279.0MB temp=71.0C pw=46.27W
+2026-09-15 19:01:44,287 | INFO    | main | step 724     engine=pytorch train=4.0404 blocks=687 val_best=inf
+2026-09-15 19:01:54,650 | INFO    | main | step 750     engine=pytorch train=4.0051 blocks=687 val_best=inf
+2026-09-15 19:02:04,940 | INFO    | main | step 777     engine=pytorch train=3.9867 blocks=687 val_best=inf
+2026-09-15 19:02:13,952 | INFO    | pytorch_trainer | M step=800    train=3.8931  36336.3 tok/s  step=0.113s  cpu=3.2% gpu=72.0% vram=1290.0MB temp=73.0C pw=49.97W
+2026-09-15 19:02:15,047 | INFO    | main | step 803     engine=pytorch train=3.9640 blocks=687 val_best=inf
+2026-09-15 19:02:25,245 | INFO    | main | step 829     engine=pytorch train=3.9407 blocks=687 val_best=inf
+2026-09-15 19:02:35,507 | INFO    | main | step 856     engine=pytorch train=3.9163 blocks=687 val_best=inf
+2026-09-15 19:02:45,663 | INFO    | main | step 883     engine=pytorch train=3.8855 blocks=687 val_best=inf
+2026-09-15 19:02:52,232 | INFO    | pytorch_trainer | M step=900    train=3.8247  36309.9 tok/s  step=0.113s  cpu=1.2% gpu=1.0% vram=1282.0MB temp=72.0C pw=45.96W
+2026-09-15 19:02:55,984 | INFO    | main | step 910     engine=pytorch train=3.8731 blocks=687 val_best=inf
+2026-09-15 19:03:06,234 | INFO    | main | step 937     engine=pytorch train=3.8470 blocks=687 val_best=inf
+2026-09-15 19:03:16,441 | INFO    | main | step 964     engine=pytorch train=3.8281 blocks=687 val_best=inf
+2026-09-15 19:03:26,835 | INFO    | main | step 991     engine=pytorch train=3.8100 blocks=687 val_best=inf
+2026-09-15 19:03:30,573 | INFO    | pytorch_trainer | M step=1000   train=3.7197  36309.7 tok/s  step=0.113s  cpu=5.9% gpu=0.0% vram=1282.0MB temp=72.0C pw=49.12W
+2026-09-15 19:03:36,913 | INFO    | main | step 1017    engine=pytorch train=3.7861 blocks=687 val_best=inf
+2026-09-15 19:03:46,968 | INFO    | main | step 1043    engine=pytorch train=3.7641 blocks=687 val_best=inf
+2026-09-15 19:03:57,202 | INFO    | main | step 1070    engine=pytorch train=3.7364 blocks=687 val_best=inf
+2026-09-15 19:04:07,489 | INFO    | main | step 1097    engine=pytorch train=3.7058 blocks=687 val_best=inf
+2026-09-15 19:04:08,771 | INFO    | pytorch_trainer | M step=1100   train=3.7118  36311.2 tok/s  step=0.113s  cpu=3.4% gpu=0.0% vram=1282.0MB temp=72.0C pw=45.75W
+2026-09-15 19:04:17,692 | INFO    | main | step 1124    engine=pytorch train=3.6959 blocks=687 val_best=inf
+2026-09-15 19:04:27,933 | INFO    | main | step 1151    engine=pytorch train=3.6791 blocks=687 val_best=inf
+2026-09-15 19:04:38,174 | INFO    | main | step 1178    engine=pytorch train=3.6589 blocks=687 val_best=inf
+2026-09-15 19:04:46,573 | INFO    | pytorch_trainer | M step=1200   train=3.6457  36320.7 tok/s  step=0.113s  cpu=1.5% gpu=87.0% vram=1282.0MB temp=75.0C pw=49.84W
+2026-09-15 19:04:48,262 | INFO    | main | step 1204    engine=pytorch train=3.6422 blocks=687 val_best=inf
+2026-09-15 19:04:58,419 | INFO    | main | step 1231    engine=pytorch train=3.6235 blocks=687 val_best=inf
+2026-09-15 19:05:08,707 | INFO    | main | step 1257    engine=pytorch train=3.6074 blocks=687 val_best=inf
+2026-09-15 19:05:18,792 | INFO    | main | step 1283    engine=pytorch train=3.5951 blocks=687 val_best=inf
+2026-09-15 19:05:25,356 | INFO    | pytorch_trainer | M step=1300   train=3.5292  36332.9 tok/s  step=0.113s  cpu=4.1% gpu=0.0% vram=1282.0MB temp=72.0C pw=49.56W
+2026-09-15 19:05:28,949 | INFO    | main | step 1309    engine=pytorch train=3.5811 blocks=687 val_best=inf
+2026-09-15 19:05:39,189 | INFO    | main | step 1336    engine=pytorch train=3.5685 blocks=687 val_best=inf
+2026-09-15 19:05:49,245 | INFO    | main | step 1362    engine=pytorch train=3.5649 blocks=687 val_best=inf
+2026-09-15 19:05:59,433 | INFO    | main | step 1388    engine=pytorch train=3.5465 blocks=687 val_best=inf
+2026-09-15 19:06:04,156 | INFO    | pytorch_trainer | M step=1400   train=3.5419  36365.1 tok/s  step=0.113s  cpu=2.8% gpu=0.0% vram=1282.0MB temp=73.0C pw=49.5W
+2026-09-15 19:06:09,722 | INFO    | main | step 1415    engine=pytorch train=3.5259 blocks=687 val_best=inf
+2026-09-15 19:06:19,928 | INFO    | main | step 1442    engine=pytorch train=3.5159 blocks=687 val_best=inf
+2026-09-15 19:06:29,959 | INFO    | main | step 1468    engine=pytorch train=3.4924 blocks=687 val_best=inf
+2026-09-15 19:06:40,207 | INFO    | main | step 1495    engine=pytorch train=3.4782 blocks=687 val_best=inf
+2026-09-15 19:06:42,388 | INFO    | pytorch_trainer | M step=1500   train=3.4198  36270.6 tok/s  step=0.113s  cpu=7.1% gpu=18.0% vram=1306.0MB temp=71.0C pw=46.19W
+2026-09-15 19:06:50,291 | INFO    | main | step 1521    engine=pytorch train=3.4608 blocks=687 val_best=inf
+2026-09-15 19:07:00,392 | INFO    | main | step 1548    engine=pytorch train=3.4485 blocks=687 val_best=inf
+2026-09-15 19:07:10,539 | INFO    | main | step 1575    engine=pytorch train=3.4451 blocks=687 val_best=inf
+2026-09-15 19:07:19,955 | INFO    | pytorch_trainer | M step=1600   train=3.4105  36023.6 tok/s  step=0.114s  cpu=3.9% gpu=0.0% vram=1306.0MB temp=73.0C pw=49.73W
+2026-09-15 19:07:20,689 | INFO    | main | step 1602    engine=pytorch train=3.4407 blocks=687 val_best=inf
+2026-09-15 19:07:30,706 | INFO    | main | step 1628    engine=pytorch train=3.4352 blocks=687 val_best=inf
+2026-09-15 19:07:41,072 | INFO    | main | step 1655    engine=pytorch train=3.4106 blocks=687 val_best=inf
+2026-09-15 19:07:51,136 | INFO    | main | step 1682    engine=pytorch train=3.4158 blocks=687 val_best=inf
+2026-09-15 19:07:58,063 | INFO    | pytorch_trainer | M step=1700   train=3.5461  35843.9 tok/s  step=0.114s  cpu=4.9% gpu=97.0% vram=1298.0MB temp=75.0C pw=50.29W
+2026-09-15 19:08:01,308 | INFO    | main | step 1708    engine=pytorch train=3.4068 blocks=687 val_best=inf
+2026-09-15 19:08:11,705 | INFO    | main | step 1736    engine=pytorch train=3.4005 blocks=687 val_best=inf
+2026-09-15 19:08:21,925 | INFO    | main | step 1763    engine=pytorch train=3.3833 blocks=687 val_best=inf
+2026-09-15 19:08:32,192 | INFO    | main | step 1790    engine=pytorch train=3.3598 blocks=687 val_best=inf
+2026-09-15 19:08:35,970 | INFO    | pytorch_trainer | M step=1800   train=3.4679  35782.6 tok/s  step=0.115s  cpu=14.4% gpu=0.0% vram=1308.0MB temp=73.0C pw=49.25W
+2026-09-15 19:08:42,289 | INFO    | main | step 1817    engine=pytorch train=3.3588 blocks=687 val_best=inf
+2026-09-15 19:08:52,527 | INFO    | main | step 1844    engine=pytorch train=3.3565 blocks=687 val_best=inf
+2026-09-15 19:09:02,786 | INFO    | main | step 1871    engine=pytorch train=3.3424 blocks=687 val_best=inf
+2026-09-15 19:09:13,002 | INFO    | main | step 1898    engine=pytorch train=3.3433 blocks=687 val_best=inf
+2026-09-15 19:09:13,804 | INFO    | pytorch_trainer | M step=1900   train=3.2162  35749.5 tok/s  step=0.115s  cpu=4.1% gpu=0.0% vram=1298.0MB temp=72.0C pw=49.9W
+2026-09-15 19:09:23,290 | INFO    | main | step 1925    engine=pytorch train=3.3158 blocks=687 val_best=inf
+2026-09-15 19:09:33,418 | INFO    | main | step 1951    engine=pytorch train=3.3068 blocks=687 val_best=inf
+2026-09-15 19:09:43,642 | INFO    | main | step 1978    engine=pytorch train=3.3102 blocks=687 val_best=inf
+2026-09-15 19:09:52,090 | INFO    | pytorch_trainer | NEW BEST val=3.3624 (step 2000)
+2026-09-15 19:09:52,090 | INFO    | pytorch_trainer | VAL loss=3.3624 best=3.3624 staleness=0/8
+2026-09-15 19:09:52,390 | INFO    | pytorch_trainer | M step=2000   train=3.2233  35817.2 tok/s  step=0.114s  cpu=11.1% gpu=17.0% vram=1300.0MB temp=71.0C pw=45.42W
+2026-09-15 19:09:53,879 | INFO    | main | step 2004    engine=pytorch train=3.2925 blocks=687 val_best=3.3624
+2026-09-15 19:10:04,020 | INFO    | main | step 2030    engine=pytorch train=3.2754 blocks=687 val_best=3.3624
+2026-09-15 19:10:14,126 | INFO    | main | step 2056    engine=pytorch train=3.2740 blocks=687 val_best=3.3624
+2026-09-15 19:10:24,365 | INFO    | main | step 2083    engine=pytorch train=3.2606 blocks=687 val_best=3.3624
+2026-09-15 19:10:30,855 | INFO    | pytorch_trainer | M step=2100   train=3.2630  36040.9 tok/s  step=0.114s  cpu=2.7% gpu=0.0% vram=1298.0MB temp=71.0C pw=46.01W
+2026-09-15 19:10:34,658 | INFO    | main | step 2110    engine=pytorch train=3.2529 blocks=687 val_best=3.3624
+2026-09-15 19:10:44,873 | INFO    | main | step 2137    engine=pytorch train=3.2565 blocks=687 val_best=3.3624
+2026-09-15 19:10:54,906 | INFO    | main | step 2163    engine=pytorch train=3.2480 blocks=687 val_best=3.3624
+2026-09-15 19:11:05,005 | INFO    | main | step 2189    engine=pytorch train=3.2270 blocks=687 val_best=3.3624
+2026-09-15 19:11:09,355 | INFO    | pytorch_trainer | M step=2200   train=3.1397  36170.3 tok/s  step=0.113s  cpu=22.4% gpu=0.0% vram=1306.0MB temp=71.0C pw=49.65W
+2026-09-15 19:11:15,158 | INFO    | main | step 2215    engine=pytorch train=3.2308 blocks=687 val_best=3.3624
+2026-09-15 19:11:25,280 | INFO    | main | step 2241    engine=pytorch train=3.2223 blocks=687 val_best=3.3624
+2026-09-15 19:11:35,391 | INFO    | main | step 2267    engine=pytorch train=3.2221 blocks=687 val_best=3.3624
+2026-09-15 19:11:45,629 | WARNING | self_learner | PLATEAU detected after 100 stagnant steps (best rolling avg 3.2035) - refreshing knowledge
+2026-09-15 19:11:45,629 | INFO    | data_engine | knowledge discovery triggered
+2026-09-15 19:11:49,161 | INFO    | data_engine | fetched 4/4 targets
+2026-09-15 19:11:49,161 | INFO    | data_engine | collect_from(4 urls): 4 usable chunks
+2026-09-15 19:11:49,377 | INFO    | data_engine | discovery round 129 added 0 block(s); buffer now 687
+2026-09-15 19:11:49,378 | INFO    | main | step 2294    engine=pytorch train=3.2116 blocks=687 val_best=3.3624
+2026-09-15 19:11:51,874 | INFO    | pytorch_trainer | M step=2300   train=3.2174  36065.7 tok/s  step=0.114s  cpu=6.5% gpu=0.0% vram=1305.0MB temp=71.0C pw=49.56W
+2026-09-15 19:11:59,648 | INFO    | main | step 2321    engine=pytorch train=3.2026 blocks=687 val_best=3.3624
+2026-09-15 19:12:10,004 | INFO    | main | step 2349    engine=pytorch train=3.1876 blocks=687 val_best=3.3624
+2026-09-15 19:12:20,177 | INFO    | main | step 2376    engine=pytorch train=3.1760 blocks=687 val_best=3.3624
+2026-09-15 19:12:29,371 | INFO    | pytorch_trainer | M step=2400   train=3.2939  36098.0 tok/s  step=0.114s  cpu=2.7% gpu=0.0% vram=1298.0MB temp=71.0C pw=49.9W
+2026-09-15 19:12:30,496 | INFO    | main | step 2403    engine=pytorch train=3.1795 blocks=687 val_best=3.3624
+2026-09-15 19:12:40,738 | INFO    | main | step 2430    engine=pytorch train=3.1787 blocks=687 val_best=3.3624
+2026-09-15 19:12:50,943 | INFO    | main | step 2457    engine=pytorch train=3.1617 blocks=687 val_best=3.3624
+2026-09-15 19:13:01,191 | INFO    | main | step 2484    engine=pytorch train=3.1670 blocks=687 val_best=3.3624
+2026-09-15 19:13:07,654 | INFO    | pytorch_trainer | M step=2500   train=3.1027  36121.2 tok/s  step=0.113s  cpu=5.6% gpu=0.0% vram=1298.0MB temp=72.0C pw=49.58W
+2026-09-15 19:13:11,421 | INFO    | main | step 2510    engine=pytorch train=3.1638 blocks=687 val_best=3.3624
+2026-09-15 19:13:21,577 | INFO    | main | step 2537    engine=pytorch train=3.1402 blocks=687 val_best=3.3624
+2026-09-15 19:13:31,716 | INFO    | main | step 2563    engine=pytorch train=3.1286 blocks=687 val_best=3.3624
+2026-09-15 19:13:42,007 | INFO    | main | step 2590    engine=pytorch train=3.1201 blocks=687 val_best=3.3624
+2026-09-15 19:13:45,906 | INFO    | pytorch_trainer | M step=2600   train=3.0390  36131.0 tok/s  step=0.113s  cpu=3.1% gpu=0.0% vram=1298.0MB temp=72.0C pw=50.12W
+2026-09-15 19:13:52,191 | INFO    | main | step 2617    engine=pytorch train=3.1217 blocks=687 val_best=3.3624
+2026-09-15 19:14:02,480 | INFO    | main | step 2643    engine=pytorch train=3.1098 blocks=687 val_best=3.3624
+2026-09-15 19:14:12,571 | INFO    | main | step 2670    engine=pytorch train=3.1170 blocks=687 val_best=3.3624
+2026-09-15 19:14:22,657 | INFO    | main | step 2696    engine=pytorch train=3.0985 blocks=687 val_best=3.3624
+2026-09-15 19:14:24,337 | INFO    | pytorch_trainer | M step=2700   train=3.0736  36172.9 tok/s  step=0.113s  cpu=2.7% gpu=0.0% vram=1298.0MB temp=71.0C pw=45.09W
+2026-09-15 19:14:32,946 | INFO    | main | step 2723    engine=pytorch train=3.0934 blocks=687 val_best=3.3624
+2026-09-15 19:14:43,071 | INFO    | main | step 2749    engine=pytorch train=3.0827 blocks=687 val_best=3.3624
+2026-09-15 19:14:53,172 | INFO    | main | step 2775    engine=pytorch train=3.0654 blocks=687 val_best=3.3624
+2026-09-15 19:15:02,988 | INFO    | pytorch_trainer | M step=2800   train=3.0921  36331.4 tok/s  step=0.113s  cpu=3.1% gpu=62.0% vram=1309.0MB temp=72.0C pw=49.67W
+2026-09-15 19:15:03,352 | INFO    | main | step 2801    engine=pytorch train=3.0728 blocks=687 val_best=3.3624
+2026-09-15 19:15:13,720 | INFO    | main | step 2829    engine=pytorch train=3.0652 blocks=687 val_best=3.3624
+2026-09-15 19:15:23,776 | INFO    | main | step 2855    engine=pytorch train=3.0591 blocks=687 val_best=3.3624
+2026-09-15 19:15:33,918 | INFO    | main | step 2882    engine=pytorch train=3.0607 blocks=687 val_best=3.3624
+2026-09-15 19:15:40,754 | INFO    | pytorch_trainer | M step=2900   train=3.0213  36330.3 tok/s  step=0.113s  cpu=4.4% gpu=0.0% vram=1300.0MB temp=72.0C pw=49.92W
+2026-09-15 19:15:44,073 | INFO    | main | step 2909    engine=pytorch train=3.0618 blocks=687 val_best=3.3624
+2026-09-15 19:15:54,318 | INFO    | main | step 2936    engine=pytorch train=3.0520 blocks=687 val_best=3.3624
+2026-09-15 19:16:04,451 | INFO    | main | step 2962    engine=pytorch train=3.0469 blocks=687 val_best=3.3624
+2026-09-15 19:16:14,658 | INFO    | main | step 2989    engine=pytorch train=3.0416 blocks=687 val_best=3.3624
+2026-09-15 19:16:19,012 | INFO    | pytorch_trainer | M step=3000   train=2.9714  36356.6 tok/s  step=0.113s  cpu=5.6% gpu=16.0% vram=1324.0MB temp=71.0C pw=46.57W
+2026-09-15 19:16:24,941 | INFO    | main | step 3016    engine=pytorch train=3.0394 blocks=687 val_best=3.3624
+2026-09-15 19:16:35,004 | INFO    | main | step 3043    engine=pytorch train=3.0289 blocks=687 val_best=3.3624
+2026-09-15 19:16:45,162 | INFO    | main | step 3070    engine=pytorch train=3.0258 blocks=687 val_best=3.3624
+2026-09-15 19:16:55,409 | INFO    | main | step 3097    engine=pytorch train=3.0184 blocks=687 val_best=3.3624
+2026-09-15 19:16:56,534 | INFO    | pytorch_trainer | M step=3100   train=2.9328  36387.5 tok/s  step=0.113s  cpu=1.8% gpu=46.0% vram=1308.0MB temp=75.0C pw=49.53W
+2026-09-15 19:17:05,803 | INFO    | main | step 3124    engine=pytorch train=3.0151 blocks=687 val_best=3.3624
+2026-09-15 19:17:15,887 | INFO    | main | step 3151    engine=pytorch train=3.0060 blocks=687 val_best=3.3624
+2026-09-15 19:17:26,036 | INFO    | main | step 3178    engine=pytorch train=2.9954 blocks=687 val_best=3.3624
+2026-09-15 19:17:34,303 | INFO    | pytorch_trainer | M step=3200   train=2.9875  36157.8 tok/s  step=0.113s  cpu=3.9% gpu=0.0% vram=1304.0MB temp=72.0C pw=50.34W
+2026-09-15 19:17:36,187 | INFO    | main | step 3205    engine=pytorch train=2.9925 blocks=687 val_best=3.3624
+2026-09-15 19:17:46,336 | INFO    | main | step 3232    engine=pytorch train=2.9799 blocks=687 val_best=3.3624
+2026-09-15 19:17:56,671 | INFO    | main | step 3259    engine=pytorch train=2.9793 blocks=687 val_best=3.3624
+2026-09-15 19:18:06,820 | INFO    | main | step 3286    engine=pytorch train=2.9692 blocks=687 val_best=3.3624
+2026-09-15 19:18:12,303 | INFO    | pytorch_trainer | M step=3300   train=3.0013  35930.5 tok/s  step=0.114s  cpu=3.6% gpu=0.0% vram=1304.0MB temp=72.0C pw=45.63W
+2026-09-15 19:18:16,855 | INFO    | main | step 3312    engine=pytorch train=2.9618 blocks=687 val_best=3.3624
+2026-09-15 19:18:27,128 | INFO    | main | step 3338    engine=pytorch train=2.9564 blocks=687 val_best=3.3624
+2026-09-15 19:18:37,403 | INFO    | main | step 3364    engine=pytorch train=2.9549 blocks=687 val_best=3.3624
+2026-09-15 19:18:47,625 | INFO    | main | step 3390    engine=pytorch train=2.9470 blocks=687 val_best=3.3624
+2026-09-15 19:18:51,586 | INFO    | pytorch_trainer | M step=3400   train=3.0013  35692.5 tok/s  step=0.115s  cpu=3.0% gpu=70.0% vram=1304.0MB temp=73.0C pw=50.03W
+2026-09-15 19:18:57,703 | INFO    | main | step 3416    engine=pytorch train=2.9347 blocks=687 val_best=3.3624
+2026-09-15 19:19:08,064 | INFO    | main | step 3444    engine=pytorch train=2.9367 blocks=687 val_best=3.3624
+2026-09-15 19:19:18,191 | INFO    | main | step 3470    engine=pytorch train=2.9327 blocks=687 val_best=3.3624
+2026-09-15 19:19:28,413 | INFO    | main | step 3496    engine=pytorch train=2.9387 blocks=687 val_best=3.3624
+2026-09-15 19:19:30,383 | INFO    | pytorch_trainer | M step=3500   train=2.8830  35633.2 tok/s  step=0.115s  cpu=4.5% gpu=18.0% vram=1293.0MB temp=71.0C pw=46.04W
+2026-09-15 19:19:38,566 | INFO    | main | step 3521    engine=pytorch train=2.9410 blocks=687 val_best=3.3624
+2026-09-15 19:19:42,168 | WARNING | self_learner | PLATEAU detected after 100 stagnant steps (best rolling avg 2.9074) - refreshing knowledge
+2026-09-15 19:19:42,168 | INFO    | data_engine | knowledge discovery triggered
+2026-09-15 19:19:42,835 | INFO    | data_engine | fetched 4/4 targets
+2026-09-15 19:19:42,837 | INFO    | data_engine | collect_from(4 urls): 4 usable chunks
+2026-09-15 19:19:43,067 | INFO    | data_engine | discovery round 130 added 0 block(s); buffer now 687
+2026-09-15 19:19:48,626 | INFO    | main | step 3545    engine=pytorch train=2.9348 blocks=687 val_best=3.3624
+2026-09-15 19:19:58,642 | INFO    | main | step 3570    engine=pytorch train=2.9347 blocks=687 val_best=3.3624
+2026-09-15 19:20:08,951 | INFO    | main | step 3598    engine=pytorch train=2.9142 blocks=687 val_best=3.3624
+2026-09-15 19:20:09,759 | INFO    | pytorch_trainer | M step=3600   train=2.8483  35652.9 tok/s  step=0.115s  cpu=1.7% gpu=32.0% vram=1293.0MB temp=71.0C pw=50.21W
+2026-09-15 19:20:18,986 | INFO    | main | step 3624    engine=pytorch train=2.9079 blocks=687 val_best=3.3624
+2026-09-15 19:20:29,072 | INFO    | main | step 3651    engine=pytorch train=2.8991 blocks=687 val_best=3.3624
+2026-09-15 19:20:39,323 | INFO    | main | step 3678    engine=pytorch train=2.8990 blocks=687 val_best=3.3624
+2026-09-15 19:20:47,893 | INFO    | pytorch_trainer | M step=3700   train=2.9509  35920.1 tok/s  step=0.114s  cpu=1.5% gpu=0.0% vram=1293.0MB temp=71.0C pw=45.75W
+2026-09-15 19:20:49,483 | INFO    | main | step 3704    engine=pytorch train=2.8950 blocks=687 val_best=3.3624
+2026-09-15 19:20:59,790 | INFO    | main | step 3732    engine=pytorch train=2.8882 blocks=687 val_best=3.3624
+2026-09-15 19:21:10,115 | INFO    | main | step 3753    engine=pytorch train=2.8910 blocks=687 val_best=3.3624
+2026-09-15 19:21:20,470 | INFO    | main | step 3781    engine=pytorch train=2.8721 blocks=687 val_best=3.3624
+2026-09-15 19:21:27,786 | INFO    | pytorch_trainer | M step=3800   train=2.6651  36031.0 tok/s  step=0.114s  cpu=5.7% gpu=0.0% vram=1300.0MB temp=72.0C pw=48.97W
+2026-09-15 19:21:30,669 | INFO    | main | step 3807    engine=pytorch train=2.8752 blocks=687 val_best=3.3624
+2026-09-15 19:21:40,850 | INFO    | main | step 3834    engine=pytorch train=2.8609 blocks=687 val_best=3.3624
+2026-09-15 19:21:51,003 | INFO    | main | step 3861    engine=pytorch train=2.8583 blocks=687 val_best=3.3624
+2026-09-15 19:22:01,207 | INFO    | main | step 3888    engine=pytorch train=2.8679 blocks=687 val_best=3.3624
+2026-09-15 19:22:05,686 | INFO    | pytorch_trainer | M step=3900   train=2.8673  36213.6 tok/s  step=0.113s  cpu=1.3% gpu=33.0% vram=1281.0MB temp=71.0C pw=50.28W
+2026-09-15 19:22:11,366 | INFO    | main | step 3915    engine=pytorch train=2.8715 blocks=687 val_best=3.3624
+2026-09-15 19:22:21,755 | INFO    | main | step 3942    engine=pytorch train=2.8561 blocks=687 val_best=3.3624
+2026-09-15 19:22:31,972 | INFO    | main | step 3969    engine=pytorch train=2.8397 blocks=687 val_best=3.3624
+2026-09-15 19:22:42,084 | INFO    | main | step 3996    engine=pytorch train=2.8388 blocks=687 val_best=3.3624
+2026-09-15 19:22:44,042 | INFO    | pytorch_trainer | NEW BEST val=3.1255 (step 4000)
+2026-09-15 19:22:44,042 | INFO    | pytorch_trainer | VAL loss=3.1255 best=3.1255 staleness=0/8
+2026-09-15 19:22:44,322 | INFO    | pytorch_trainer | M step=4000   train=2.8069  36230.1 tok/s  step=0.113s  cpu=11.5% gpu=60.0% vram=1290.0MB temp=72.0C pw=47.64W
+2026-09-15 19:22:52,088 | INFO    | main | step 4021    engine=pytorch train=2.8342 blocks=687 val_best=3.1255
+2026-09-15 19:23:02,363 | INFO    | main | step 4048    engine=pytorch train=2.8326 blocks=687 val_best=3.1255
+2026-09-15 19:23:12,600 | INFO    | main | step 4075    engine=pytorch train=2.8415 blocks=687 val_best=3.1255
+2026-09-15 19:23:21,869 | INFO    | pytorch_trainer | M step=4100   train=2.8039  36166.5 tok/s  step=0.113s  cpu=0.9% gpu=0.0% vram=1286.0MB temp=71.0C pw=49.17W
+2026-09-15 19:23:22,961 | INFO    | main | step 4103    engine=pytorch train=2.8276 blocks=687 val_best=3.1255
+2026-09-15 19:23:33,055 | INFO    | main | step 4130    engine=pytorch train=2.8251 blocks=687 val_best=3.1255
+2026-09-15 19:23:43,060 | INFO    | main | step 4157    engine=pytorch train=2.8029 blocks=687 val_best=3.1255
+2026-09-15 19:23:53,355 | INFO    | main | step 4184    engine=pytorch train=2.7911 blocks=687 val_best=3.1255
+2026-09-15 19:23:59,586 | INFO    | pytorch_trainer | M step=4200   train=2.9418  36037.5 tok/s  step=0.114s  cpu=3.1% gpu=89.0% vram=1288.0MB temp=75.0C pw=48.51W
+2026-09-15 19:24:03,666 | INFO    | main | step 4211    engine=pytorch train=2.7929 blocks=687 val_best=3.1255
+2026-09-15 19:24:13,886 | INFO    | main | step 4238    engine=pytorch train=2.7997 blocks=687 val_best=3.1255
+2026-09-15 19:24:23,901 | INFO    | main | step 4264    engine=pytorch train=2.7994 blocks=687 val_best=3.1255
+2026-09-15 19:24:33,919 | INFO    | main | step 4290    engine=pytorch train=2.7838 blocks=687 val_best=3.1255
+2026-09-15 19:24:37,661 | INFO    | pytorch_trainer | M step=4300   train=2.7470  36153.6 tok/s  step=0.113s  cpu=2.2% gpu=94.0% vram=1280.0MB temp=74.0C pw=49.28W
+2026-09-15 19:24:43,946 | INFO    | main | step 4317    engine=pytorch train=2.7826 blocks=687 val_best=3.1255
+2026-09-15 19:24:54,086 | INFO    | main | step 4343    engine=pytorch train=2.7879 blocks=687 val_best=3.1255
+2026-09-15 19:25:04,282 | INFO    | main | step 4370    engine=pytorch train=2.7817 blocks=687 val_best=3.1255
+2026-09-15 19:25:13,225 | WARNING | self_learner | PLATEAU detected after 100 stagnant steps (best rolling avg 2.7692) - refreshing knowledge
+2026-09-15 19:25:13,225 | INFO    | data_engine | knowledge discovery triggered
+2026-09-15 19:25:17,977 | INFO    | data_engine | fetched 4/4 targets
+2026-09-15 19:25:18,154 | INFO    | data_engine | collect_from(4 urls): 180 usable chunks
+2026-09-15 19:25:18,369 | INFO    | data_engine | discovery round 131 added 0 block(s); buffer now 687
+2026-09-15 19:25:18,369 | INFO    | main | step 4394    engine=pytorch train=2.7713 blocks=687 val_best=3.1255
+2026-09-15 19:25:20,819 | INFO    | pytorch_trainer | M step=4400   train=2.8994  36061.7 tok/s  step=0.114s  cpu=3.1% gpu=0.0% vram=1291.0MB temp=70.0C pw=49.36W
+2026-09-15 19:25:28,594 | INFO    | main | step 4421    engine=pytorch train=2.7602 blocks=687 val_best=3.1255
+2026-09-15 19:25:38,969 | INFO    | main | step 4449    engine=pytorch train=2.7533 blocks=687 val_best=3.1255
+2026-09-15 19:25:49,289 | INFO    | main | step 4477    engine=pytorch train=2.7472 blocks=687 val_best=3.1255
+2026-09-15 19:25:58,103 | INFO    | pytorch_trainer | M step=4500   train=2.7418  36062.9 tok/s  step=0.114s  cpu=7.6% gpu=3.0% vram=1299.0MB temp=71.0C pw=49.01W
+2026-09-15 19:25:59,598 | INFO    | main | step 4504    engine=pytorch train=2.7453 blocks=687 val_best=3.1255
+2026-09-15 19:26:09,969 | INFO    | main | step 4532    engine=pytorch train=2.7413 blocks=687 val_best=3.1255
+2026-09-15 19:26:20,291 | INFO    | main | step 4560    engine=pytorch train=2.7346 blocks=687 val_best=3.1255
+2026-09-15 19:26:30,384 | INFO    | main | step 4587    engine=pytorch train=2.7299 blocks=687 val_best=3.1255
+2026-09-15 19:26:35,384 | INFO    | pytorch_trainer | M step=4600   train=2.7985  36064.5 tok/s  step=0.114s  cpu=3.5% gpu=0.0% vram=1291.0MB temp=71.0C pw=49.7W
+2026-09-15 19:26:40,453 | INFO    | main | step 4613    engine=pytorch train=2.7251 blocks=687 val_best=3.1255
+2026-09-15 19:26:50,524 | INFO    | main | step 4640    engine=pytorch train=2.7347 blocks=687 val_best=3.1255
+2026-09-15 19:27:00,802 | INFO    | main | step 4667    engine=pytorch train=2.7389 blocks=687 val_best=3.1255
+2026-09-15 19:27:11,004 | INFO    | main | step 4694    engine=pytorch train=2.7242 blocks=687 val_best=3.1255
+2026-09-15 19:27:13,269 | INFO    | pytorch_trainer | M step=4700   train=2.7896  36105.1 tok/s  step=0.113s  cpu=5.9% gpu=0.0% vram=1280.0MB temp=71.0C pw=49.49W
+2026-09-15 19:27:21,049 | INFO    | main | step 4721    engine=pytorch train=2.7216 blocks=687 val_best=3.1255
+2026-09-15 19:27:31,283 | INFO    | main | step 4748    engine=pytorch train=2.7154 blocks=687 val_best=3.1255
+2026-09-15 19:27:41,425 | INFO    | main | step 4774    engine=pytorch train=2.7021 blocks=687 val_best=3.1255
+2026-09-15 19:27:51,368 | INFO    | pytorch_trainer | M step=4800   train=2.7456  36091.6 tok/s  step=0.114s  cpu=2.6% gpu=0.0% vram=1291.0MB temp=71.0C pw=49.81W
+2026-09-15 19:27:51,733 | INFO    | main | step 4801    engine=pytorch train=2.7021 blocks=687 val_best=3.1255
+2026-09-15 19:28:02,078 | INFO    | main | step 4829    engine=pytorch train=2.6992 blocks=687 val_best=3.1255
+2026-09-15 19:28:12,342 | INFO    | main | step 4856    engine=pytorch train=2.6967 blocks=687 val_best=3.1255
+2026-09-15 19:28:22,598 | INFO    | main | step 4883    engine=pytorch train=2.6970 blocks=687 val_best=3.1255
+2026-09-15 19:28:29,418 | INFO    | pytorch_trainer | M step=4900   train=2.6089  36226.3 tok/s  step=0.113s  cpu=0.9% gpu=0.0% vram=1285.0MB temp=71.0C pw=49.63W
+2026-09-15 19:28:32,721 | INFO    | main | step 4909    engine=pytorch train=2.6885 blocks=687 val_best=3.1255
+2026-09-15 19:28:42,896 | INFO    | main | step 4936    engine=pytorch train=2.6901 blocks=687 val_best=3.1255
+2026-09-15 19:28:53,051 | INFO    | main | step 4963    engine=pytorch train=2.6785 blocks=687 val_best=3.1255
+2026-09-15 19:29:03,287 | INFO    | main | step 4990    engine=pytorch train=2.6808 blocks=687 val_best=3.1255
+2026-09-15 19:29:07,299 | INFO    | pytorch_trainer | M step=5000   train=2.7026  36198.6 tok/s  step=0.113s  cpu=10.9% gpu=0.0% vram=1306.0MB temp=73.0C pw=50.36W
+2026-09-15 19:29:13,614 | INFO    | main | step 5017    engine=pytorch train=2.6698 blocks=687 val_best=3.1255
+2026-09-15 19:29:24,052 | INFO    | main | step 5045    engine=pytorch train=2.6705 blocks=687 val_best=3.1255
+2026-09-15 19:29:34,239 | INFO    | main | step 5072    engine=pytorch train=2.6783 blocks=687 val_best=3.1255
+2026-09-15 19:29:44,497 | INFO    | main | step 5099    engine=pytorch train=2.6628 blocks=687 val_best=3.1255
+2026-09-15 19:29:44,900 | INFO    | pytorch_trainer | M step=5100   train=2.7310  36174.4 tok/s  step=0.113s  cpu=1.9% gpu=0.0% vram=1294.0MB temp=72.0C pw=49.3W
+2026-09-15 19:29:54,802 | INFO    | main | step 5126    engine=pytorch train=2.6510 blocks=687 val_best=3.1255
+2026-09-15 19:30:05,014 | INFO    | main | step 5153    engine=pytorch train=2.6395 blocks=687 val_best=3.1255
+2026-09-15 19:30:15,309 | INFO    | main | step 5180    engine=pytorch train=2.6367 blocks=687 val_best=3.1255
+2026-09-15 19:30:22,781 | INFO    | pytorch_trainer | M step=5200   train=2.5860  36159.3 tok/s  step=0.113s  cpu=9.7% gpu=0.0% vram=1316.0MB temp=72.0C pw=49.7W
+2026-09-15 19:30:25,374 | INFO    | main | step 5207    engine=pytorch train=2.6197 blocks=687 val_best=3.1255
+2026-09-15 19:30:35,659 | INFO    | main | step 5234    engine=pytorch train=2.6151 blocks=687 val_best=3.1255
+2026-09-15 19:30:45,972 | INFO    | main | step 5261    engine=pytorch train=2.6180 blocks=687 val_best=3.1255
+2026-09-15 19:30:56,285 | INFO    | main | step 5288    engine=pytorch train=2.6242 blocks=687 val_best=3.1255
+2026-09-15 19:30:59,249 | WARNING | self_learner | PLATEAU detected after 100 stagnant steps (best rolling avg 2.6062) - refreshing knowledge
+2026-09-15 19:30:59,249 | INFO    | data_engine | knowledge discovery triggered
+2026-09-15 19:31:22,685 | INFO    | data_engine | fetched 4/4 targets
+2026-09-15 19:31:23,122 | INFO    | data_engine | collect_from(4 urls): 486 usable chunks
+2026-09-15 19:31:23,341 | INFO    | data_engine | discovery round 132 added 0 block(s); buffer now 687
+2026-09-15 19:31:23,341 | INFO    | main | step 5296    engine=pytorch train=2.6246 blocks=687 val_best=3.1255
+2026-09-15 19:31:25,185 | INFO    | pytorch_trainer | M step=5300   train=2.5860  35906.9 tok/s  step=0.114s  cpu=1.3% gpu=51.0% vram=1334.0MB temp=69.0C pw=45.98W
+2026-09-15 19:31:33,385 | INFO    | main | step 5322    engine=pytorch train=2.6269 blocks=687 val_best=3.1255
+2026-09-15 19:31:43,434 | INFO    | main | step 5349    engine=pytorch train=2.6152 blocks=687 val_best=3.1255
+2026-09-15 19:31:53,569 | INFO    | main | step 5376    engine=pytorch train=2.6099 blocks=687 val_best=3.1255
+2026-09-15 19:32:02,534 | INFO    | pytorch_trainer | M step=5400   train=2.6471  35767.3 tok/s  step=0.115s  cpu=1.7% gpu=25.0% vram=1310.0MB temp=69.0C pw=48.96W
+2026-09-15 19:32:03,633 | INFO    | main | step 5403    engine=pytorch train=2.6172 blocks=687 val_best=3.1255
+2026-09-15 19:32:13,699 | INFO    | main | step 5430    engine=pytorch train=2.6047 blocks=687 val_best=3.1255
+2026-09-15 19:32:23,787 | INFO    | main | step 5457    engine=pytorch train=2.6038 blocks=687 val_best=3.1255
+2026-09-15 19:32:33,901 | INFO    | main | step 5484    engine=pytorch train=2.6023 blocks=687 val_best=3.1255
+2026-09-15 19:32:40,138 | INFO    | pytorch_trainer | M step=5500   train=2.4852  35617.7 tok/s  step=0.115s  cpu=11.0% gpu=2.0% vram=1338.0MB temp=70.0C pw=49.73W
+2026-09-15 19:32:44,227 | INFO    | main | step 5511    engine=pytorch train=2.5984 blocks=687 val_best=3.1255
+2026-09-15 19:32:54,298 | INFO    | main | step 5538    engine=pytorch train=2.5881 blocks=687 val_best=3.1255
+2026-09-15 19:33:04,304 | INFO    | main | step 5565    engine=pytorch train=2.5868 blocks=687 val_best=3.1255
+2026-09-15 19:33:14,357 | INFO    | main | step 5592    engine=pytorch train=2.5762 blocks=687 val_best=3.1255
+2026-09-15 19:33:17,385 | INFO    | pytorch_trainer | M step=5600   train=2.4464  35635.1 tok/s  step=0.115s  cpu=0.4% gpu=0.0% vram=1320.0MB temp=71.0C pw=49.37W
+2026-09-15 19:33:24,389 | INFO    | main | step 5619    engine=pytorch train=2.5624 blocks=687 val_best=3.1255
+2026-09-15 19:33:34,408 | INFO    | main | step 5646    engine=pytorch train=2.5592 blocks=687 val_best=3.1255
+2026-09-15 19:33:44,614 | INFO    | main | step 5673    engine=pytorch train=2.5561 blocks=687 val_best=3.1255
+2026-09-15 19:33:54,976 | INFO    | pytorch_trainer | M step=5700   train=2.6113  35748.6 tok/s  step=0.115s  cpu=1.3% gpu=0.0% vram=1317.0MB temp=72.0C pw=49.6W
+2026-09-15 19:33:55,339 | INFO    | main | step 5701    engine=pytorch train=2.5528 blocks=687 val_best=3.1255
+2026-09-15 19:34:05,388 | INFO    | main | step 5728    engine=pytorch train=2.5394 blocks=687 val_best=3.1255
+2026-09-15 19:34:15,515 | INFO    | main | step 5754    engine=pytorch train=2.5395 blocks=687 val_best=3.1255
+2026-09-15 19:34:25,553 | INFO    | main | step 5781    engine=pytorch train=2.5403 blocks=687 val_best=3.1255
+2026-09-15 19:34:32,656 | INFO    | pytorch_trainer | M step=5800   train=2.5717  36041.9 tok/s  step=0.114s  cpu=2.8% gpu=97.0% vram=1302.0MB temp=74.0C pw=49.34W
+2026-09-15 19:34:35,611 | INFO    | main | step 5808    engine=pytorch train=2.5464 blocks=687 val_best=3.1255
+2026-09-15 19:34:45,856 | INFO    | main | step 5835    engine=pytorch train=2.5471 blocks=687 val_best=3.1255
+2026-09-15 19:34:56,100 | INFO    | main | step 5861    engine=pytorch train=2.5397 blocks=687 val_best=3.1255
+2026-09-15 19:35:06,203 | INFO    | main | step 5888    engine=pytorch train=2.5459 blocks=687 val_best=3.1255
+2026-09-15 19:35:10,750 | INFO    | pytorch_trainer | M step=5900   train=2.5251  36054.9 tok/s  step=0.114s  cpu=2.6% gpu=22.0% vram=1301.0MB temp=75.0C pw=49.89W
+2026-09-15 19:35:16,481 | INFO    | main | step 5914    engine=pytorch train=2.5280 blocks=687 val_best=3.1255
+2026-09-15 19:35:26,496 | INFO    | main | step 5940    engine=pytorch train=2.5142 blocks=687 val_best=3.1255
+2026-09-15 19:35:36,542 | INFO    | main | step 5967    engine=pytorch train=2.5132 blocks=687 val_best=3.1255
+2026-09-15 19:35:46,723 | INFO    | main | step 5988    engine=pytorch train=2.5113 blocks=687 val_best=3.1255
+2026-09-15 19:35:51,286 | INFO    | pytorch_trainer | VAL loss=3.1340 best=3.1255 staleness=1/8
+2026-09-15 19:35:51,585 | INFO    | pytorch_trainer | M step=6000   train=2.5427  35915.2 tok/s  step=0.114s  cpu=8.1% gpu=49.0% vram=1314.0MB temp=72.0C pw=47.81W
+2026-09-15 19:35:51,824 | INFO    | main | pipeline finished cleanly at step 6000 (step budget reached)

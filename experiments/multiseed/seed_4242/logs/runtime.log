@@ -1,0 +1,16 @@
+2026-09-18 18:50:12,327 | INFO    | main | ================================================================
+2026-09-18 18:50:12,327 | INFO    | main | self-learning pipeline (steps=6000, model=6L/512E, vocab=4096)
+2026-09-18 18:50:12,327 | INFO    | main | ================================================================
+2026-09-18 18:50:12,549 | INFO    | data_engine | buffer has 693 valid block(s); skipping seed
+2026-09-18 18:50:12,549 | INFO    | main | engine: Standard PyTorch AMP (forced)
+2026-09-18 18:50:12,558 | INFO    | data_engine | corpus mmap already present (corpus_5ac147a51cc3d8f2.npy)
+2026-09-18 18:50:24,348 | INFO    | main | step 21      engine=pytorch train=8.3288 blocks=693 val_best=inf
+2026-09-18 18:50:34,510 | INFO    | main | step 47      engine=pytorch train=8.0031 blocks=693 val_best=inf
+2026-09-18 18:50:44,720 | INFO    | main | step 73      engine=pytorch train=7.5673 blocks=693 val_best=inf
+2026-09-18 18:50:54,798 | INFO    | main | step 99      engine=pytorch train=7.0846 blocks=693 val_best=inf
+2026-09-18 18:50:55,224 | INFO    | pytorch_trainer | M step=100    train=6.2069  27093.3 tok/s  step=0.151s  cpu=10.4% gpu=4.0% vram=1630.0MB temp=69.0C pw=49.58W
+2026-09-18 18:51:04,958 | INFO    | main | step 125     engine=pytorch train=6.6817 blocks=693 val_best=inf
+2026-09-18 18:51:15,082 | INFO    | main | step 151     engine=pytorch train=6.4098 blocks=693 val_best=inf
+2026-09-18 18:51:25,143 | INFO    | main | step 177     engine=pytorch train=6.2125 blocks=693 val_best=inf
+2026-09-18 18:51:34,144 | INFO    | pytorch_trainer | M step=200    train=5.6312  29169.0 tok/s  step=0.140s  cpu=2.2% gpu=4.0% vram=1606.0MB temp=71.0C pw=50.17W
+2026-09-18 18:51:35,286 | INFO    | main | step 203     engine=pytorch train=6.0049 blocks=693 val_best=inf

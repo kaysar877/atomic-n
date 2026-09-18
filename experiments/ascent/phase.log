@@ -1,0 +1,9 @@
+2026-09-18 14:41:21 | ascent | === ASCENT START: LR 0.0002, target VAL<3.0, plateau 5x, max legs 12 ===
+2026-09-18 14:41:21 | ascent | resuming: leg 1, steps already 0
+2026-09-18 14:41:21 | ascent | --- leg 1: budget 6000 steps (recipe +6000 more) ---
+2026-09-18 15:22:27 | ascent | leg 1 rc=0
+2026-09-18 15:22:27 | ascent | leg 1 -> val_best=inf, staleness=0/5
+2026-09-18 15:22:32 | ascent | --- leg 2: budget 12000 steps (recipe +6000 more) ---
+2026-09-18 16:44:27 | ascent | leg 2 rc=0
+2026-09-18 16:44:28 | ascent | leg 2 -> val_best=inf, staleness=0/5
+2026-09-18 16:44:33 | ascent | --- leg 3: budget 18000 steps (recipe +6000 more) ---

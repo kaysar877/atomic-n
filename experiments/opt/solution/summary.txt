@@ -1,0 +1,2 @@
+lr,val_trajectory(val/best per eval),rc
+0.0001,3.5658/3.5658;3.2604/3.2604;3.1503/3.1503,0

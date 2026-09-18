@@ -476,7 +476,7 @@ to the code used for every reported number.
 | training logs | ✅ `experiments/` (text; checkpoints on-request) |
 | checkpoints | 📬 on request (Appendix B) |
 | ablation experiments | ✅ `experiments/opt/attrib_wd|attrib_cos|recipe|solution|conf` (VRAM/token costs in §7) |
-| multi-seed confirmation | ✅ seeds `4242`,`7777` — `experiments/multiseed/` (protocol: Appendix E) |
+| multi-seed confirmation | ⏳ **IN PROGRESS** — seeds `4242`,`7777` in `experiments/multiseed/`, run by `source/multiseed_loop.py` (protocol: Appendix E); results appended here on completion |
 
 ## APPENDIX D — EXPERIMENT ARTIFACTS IN THIS REPO
 
@@ -501,6 +501,7 @@ two NEW seeds `4242` and `7777`, independent of the arena's original `1337`.
 Each seed produces a fresh model init (`torch.manual_seed(RANDOM_SEED)` in
 `pytorch_trainer.py`) and an independent data-sampler stream (`LOADER_SEED + 17`).
 Legs run sequentially (respecting thermal guardrails), each in its own
-checkpoint/log dir. Outcome summary lands in `experiments/multiseed/summary.csv`.
+checkpoint/log dir. Outcome summary lands in `experiments/multiseed/summary.csv`
+and is appended to this report when complete. **Status: running.**
 
 *End of package — v2 excluded by design; contact the author for the extension.*

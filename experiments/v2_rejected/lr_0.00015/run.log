@@ -1,0 +1,30 @@
+2026-09-16 01:00:54,707 | INFO    | main | ================================================================
+2026-09-16 01:00:54,709 | INFO    | main | self-learning pipeline (steps=4000, model=6L/512E, vocab=4096)
+2026-09-16 01:00:54,709 | INFO    | main | ================================================================
+2026-09-16 01:00:54,947 | INFO    | data_engine | buffer has 692 valid block(s); skipping seed
+2026-09-16 01:00:54,947 | INFO    | main | engine: Standard PyTorch AMP (forced)
+2026-09-16 01:00:54,956 | INFO    | data_engine | corpus mmap already present (corpus_d0456d6caeb2daf3.npy)
+2026-09-16 01:01:07,023 | INFO    | main | step 18      engine=pytorch train=8.0864 blocks=692 val_best=inf
+2026-09-16 01:01:17,271 | INFO    | main | step 41      engine=pytorch train=7.3843 blocks=692 val_best=inf
+2026-09-16 01:01:27,477 | INFO    | main | step 64      engine=pytorch train=6.8768 blocks=692 val_best=inf
+2026-09-16 01:01:37,719 | INFO    | main | step 87      engine=pytorch train=6.5552 blocks=692 val_best=inf
+2026-09-16 01:01:43,531 | INFO    | pytorch_trainer | M step=100    train=5.9565  20043.5 tok/s  step=0.204s  cpu=17.8% gpu=0.0% vram=1762.0MB temp=58.0C pw=49.01W
+2026-09-16 01:01:48,048 | INFO    | main | step 110     engine=pytorch train=6.3463 blocks=692 val_best=inf
+2026-09-16 01:01:58,252 | INFO    | main | step 133     engine=pytorch train=6.2132 blocks=692 val_best=inf
+2026-09-16 01:02:08,485 | INFO    | main | step 156     engine=pytorch train=6.1306 blocks=692 val_best=inf
+2026-09-16 01:02:18,635 | INFO    | main | step 179     engine=pytorch train=6.0752 blocks=692 val_best=inf
+2026-09-16 01:02:28,027 | INFO    | pytorch_trainer | M step=200    train=6.0102  21137.3 tok/s  step=0.194s  cpu=7.0% gpu=0.0% vram=1756.0MB temp=63.0C pw=48.77W
+2026-09-16 01:02:28,939 | INFO    | main | step 202     engine=pytorch train=6.0386 blocks=692 val_best=inf
+2026-09-16 01:02:39,273 | INFO    | main | step 225     engine=pytorch train=6.0195 blocks=692 val_best=inf
+2026-09-16 01:02:49,648 | INFO    | main | step 248     engine=pytorch train=6.0050 blocks=692 val_best=inf
+2026-09-16 01:02:59,747 | INFO    | main | step 270     engine=pytorch train=6.0015 blocks=692 val_best=inf
+2026-09-16 01:03:08,682 | WARNING | self_learner | PLATEAU detected after 100 stagnant steps (best rolling avg 5.9818) - refreshing knowledge
+2026-09-16 01:03:08,682 | INFO    | data_engine | knowledge discovery triggered
+2026-09-16 01:03:50,218 | INFO    | data_engine | fetched 4/4 targets
+2026-09-16 01:03:50,636 | INFO    | data_engine | collect_from(4 urls): 438 usable chunks
+2026-09-16 01:03:50,652 | INFO    | data_engine | wrote knowledge_block_000692.pt (738 tokens)
+2026-09-16 01:03:50,895 | INFO    | data_engine | discovery round 178 added 1 block(s); buffer now 693
+2026-09-16 01:03:50,917 | INFO    | data_engine | corpus mmap written: corpus_5ac147a51cc3d8f2.npy (1430013 tokens, 623 train / 70 val spans)
+2026-09-16 01:03:51,672 | INFO    | main | step 290     engine=pytorch train=5.9969 blocks=692 val_best=inf
+2026-09-16 01:03:57,768 | INFO    | pytorch_trainer | M step=300    train=5.9640  20828.8 tok/s  step=0.197s  cpu=8.3% gpu=76.0% vram=1753.0MB temp=64.0C pw=54.28W
+2026-09-16 01:04:01,826 | INFO    | main | step 309     engine=pytorch train=5.9870 blocks=693 val_best=inf

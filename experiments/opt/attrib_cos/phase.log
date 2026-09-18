@@ -1,0 +1,5 @@
+2026-09-16 18:54:23,206 | phase | === leg lr_0.00015 cell=atomic steps=6000 ===
+2026-09-16 19:34:05,176 | phase | leg lr_0.00015 rc=0
+2026-09-16 19:34:10,187 | phase | PHASE lr,val_trajectory(val/best per eval),rc
+2026-09-16 19:34:10,187 | phase | PHASE 0.00015,3.3590/3.3590;3.1253/3.1253;3.0726/3.0726,0
+2026-09-16 19:34:10,187 | phase | phase complete: sweep_attrib_cos

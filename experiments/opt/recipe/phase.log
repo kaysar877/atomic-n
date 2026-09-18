@@ -1,0 +1,10 @@
+2026-09-17 12:15:06,127 | phase | === leg lr_0.0001 cell=atomic steps=6000 ===
+2026-09-17 12:55:40,902 | phase | leg lr_0.0001 rc=0
+2026-09-17 12:55:45,913 | phase | PHASE lr,val_trajectory(val/best per eval),rc
+2026-09-17 12:55:45,914 | phase | PHASE 0.0001,3.5823/3.5823;3.2895/3.2895;3.2194/3.2194,0
+2026-09-17 12:55:45,914 | phase | phase complete: sweep_recipe
+2026-09-17 12:55:45,990 | phase | === leg lr_0.0002 cell=atomic steps=6000 ===
+2026-09-17 13:37:25,726 | phase | leg lr_0.0002 rc=0
+2026-09-17 13:37:30,744 | phase | PHASE lr,val_trajectory(val/best per eval),rc
+2026-09-17 13:37:30,744 | phase | PHASE 0.0002,3.3183/3.3183;3.0972/3.0972;3.0524/3.0524,0
+2026-09-17 13:37:30,746 | phase | phase complete: sweep_recipe
