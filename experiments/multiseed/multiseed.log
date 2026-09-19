@@ -1,3 +1,13 @@
 2026-09-18 18:50:10 | multiseed | === MULTI-SEED START: atomic @1.5e-4 + wd0.1 + cosine + 200 warmup + floor0.4 ===
 2026-09-18 18:50:10 | multiseed | seeds: [4242, 7777] (arena original was 1337 -> champion VAL 3.0762)
 2026-09-18 18:50:10 | multiseed | --- seed 4242 ---
+2026-09-18 19:31:52 | multiseed | seed 4242 rc=0
+2026-09-18 19:31:52 | multiseed | seed 4242 -> best val = 3.0681
+2026-09-18 19:31:52 | multiseed | --- seed 7777 ---
+2026-09-18 20:13:20 | multiseed | seed 7777 rc=0
+2026-09-18 20:13:20 | multiseed | seed 7777 -> best val = 3.0688
+2026-09-18 20:13:20 | multiseed | === MULTI-SEED DONE ===
+2026-09-18 20:13:20 | multiseed | seed 4242: 3.0681
+2026-09-18 20:13:20 | multiseed | seed 7777: 3.0688
+2026-09-18 20:13:20 | multiseed | N=2  mean=3.0684  min=3.0681  max=3.0688  spread=0.0007
+2026-09-18 20:13:20 | multiseed | vs original champion 3.0762 -> delta -0.0078 (mean across new seeds)

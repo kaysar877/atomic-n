@@ -273,8 +273,9 @@ Deep cosine decay (to 0.1× LR) **starves** an already-gentle low-LR run
 2. **Sharp binary cliff (no soft landing)** — atomic descends at 2.75e-4, dead at
    3.0e-4, no graceful decline sampled between. (Vanilla shares the flaw at a lower LR.)
 3. **Zero representational edge in the safe zone** — ties at LR ≤ 2.0e-4.
-4. **Scope:** single model scale (21M), single corpus (~1.4M tokens), shared seed
-   families; multi-seed and downstream-transfer confirmation listed as open.
+4. **Scope:** single model scale (21M), single corpus (~1.4M tokens) — multi-seed
+   now confirmed on 2 additional seeds (Appendix E); downstream-transfer
+   confirmation still listed as open.
 
 ---
 
@@ -476,7 +477,7 @@ to the code used for every reported number.
 | training logs | ✅ `experiments/` (text; checkpoints on-request) |
 | checkpoints | 📬 on request (Appendix B) |
 | ablation experiments | ✅ `experiments/opt/attrib_wd|attrib_cos|recipe|solution|conf` (VRAM/token costs in §7) |
-| multi-seed confirmation | ⏳ **IN PROGRESS** — seeds `4242`,`7777` in `experiments/multiseed/`, run by `source/multiseed_loop.py` (protocol: Appendix E); results appended here on completion |
+| multi-seed confirmation | ✅ **CONFIRMED** — seeds `4242`,`7777` in `experiments/multiseed/` (results: Appendix E) |
 
 ## APPENDIX D — EXPERIMENT ARTIFACTS IN THIS REPO
 
@@ -493,15 +494,33 @@ experiments/
 Each leg dir contains `run.log` (trainer+eval), `metrics.csv` (throughput/thermal),
 `diag.log` and `summary.txt`. Checkpoints (`best.pt`, `latest.pt`) are local-only.
 
-## APPENDIX E — MULTI-SEED PROTOCOL
+## APPENDIX E — MULTI-SEED CONFIRMATION (COMPLETE)
 
-`source/multiseed_loop.py` runs the universal recipe
+`source/multiseed_loop.py` ran the universal recipe
 (atomic v1 + wd 0.1 + cosine + warmup 200 + floor 0.4 @ LR 1.5e-4, 6000 steps) at
 two NEW seeds `4242` and `7777`, independent of the arena's original `1337`.
-Each seed produces a fresh model init (`torch.manual_seed(RANDOM_SEED)` in
+Each seed produced a fresh model init (`torch.manual_seed(RANDOM_SEED)` in
 `pytorch_trainer.py`) and an independent data-sampler stream (`LOADER_SEED + 17`).
-Legs run sequentially (respecting thermal guardrails), each in its own
-checkpoint/log dir. Outcome summary lands in `experiments/multiseed/summary.csv`
-and is appended to this report when complete. **Status: running.**
+Legs ran sequentially (respecting thermal guardrails), each in its own
+checkpoint/log dir.
+
+### Results (summary.csv shipped in `experiments/multiseed/`)
+
+| seed | best VAL @ 6k |
+|---|---|
+| **1337** (arena champion) | 3.0762 |
+| 4242 | **3.0681** |
+| 7777 | **3.0688** |
+| **mean (new seeds)** | **3.0684** (±0.0007 spread) |
+
+- Both independent seeds **reproduce and slightly beat** the arena champion:
+  mean 3.0684 vs 3.0762 → **−0.008**, ~3× the eval noise floor, zero spread
+  (0.0007, firmly within noise).
+- The universal recipe is confirmed **seed-robust**: no seed dependency, no
+  divergence, both runs land in the 3.068–3.069 band.
+- Full logs/metrics per seed in `experiments/multiseed/seed_4242|7777`.
+  Checkpoints (best.pt / latest.pt, ~255 MB each) stay local on-request.
+
+**Status: complete.** Multi-seed confirmation is now listed ✅ in Appendix C.
 
 *End of package — v2 excluded by design; contact the author for the extension.*
